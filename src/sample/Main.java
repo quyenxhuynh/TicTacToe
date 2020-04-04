@@ -12,32 +12,36 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+
+// SCENE SWITCHING RESOURCE: https://stackoverflow.com/questions/37200845/how-to-switch-scenes-in-javafx
+
 public class Main extends Application {
     Label placeholder;
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-//        Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));
-        primaryStage.setTitle("Tic Tac Toe");
-
-        Label text = new Label("Let's play tic-tac-toe!");
-        placeholder = new Label("");
-        placeholder.setVisible(true);
-
-        Button button = new Button("Start Game");
-        button.setOnAction(new ButtonHandler());
-
-
-        FlowPane pane = new FlowPane();
-        pane.getChildren().addAll(text, button, placeholder);
-
-        primaryStage.setScene(new Scene(pane, 300, 275));
-        primaryStage.show();
-    }
 
     public static void main(String[] args) {
         launch(args);
     }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));
+        primaryStage.setTitle("Tic-Tac-Toe");
+
+        Scene s = new Scene(root, 500, 300);
+
+        ScreenController screenController = new ScreenController(s);
+        screenController.add("start", FXMLLoader.load(getClass().getResource( "start.fxml" )));
+        screenController.add("game", FXMLLoader.load(getClass().getResource( "game.fxml" )));
+        screenController.activate("start");
+
+        primaryStage.setScene(s);
+
+//
+//        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.show();
+    }
+
+
 
     private class ButtonHandler implements EventHandler<ActionEvent> {
 

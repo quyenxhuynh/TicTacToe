@@ -79,6 +79,10 @@ public class Board {
         }
     }
 
+    public void printBoard() {
+        System.out.println(this);
+    }
+
     public String toString() {
         StringBuilder s = new StringBuilder("");
         s.append("---------------------\n");

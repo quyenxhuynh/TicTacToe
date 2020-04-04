@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sample.Controller">
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <ButtonBar layoutX="141.0" layoutY="294.0" prefHeight="40.0" prefWidth="200.0">
-        <buttons>
-          <Button fx:id="start" alignment="CENTER" mnemonicParsing="false" onAction="#startGame" onMouseClicked="#gameScene" text="Start Game" />
-        </buttons>
-      </ButtonBar>
-      <TextArea layoutX="126.0" layoutY="100.0" prefHeight="0.0" prefWidth="349.0" text="TIC TAC TOE">
-         <font>
-            <Font name="Helvetica Neue" size="48.0" />
-         </font>
-      </TextArea>
-      <TextField alignment="CENTER" layoutX="217.0" layoutY="200.0" text="Quyen Huynh" />
-   </children>
-</Pane>
+    <Label text="Tic-Tac-Toe"/>
+    <Button text="Start Game" fx:id="button" onAction="#startButtonClicked"/>
+
+<!--    <fx:define>-->
+<!--        <ToggleGroup fx:id="toggleGroup"/>-->
+<!--    </fx:define>-->
+
+</VBox>
