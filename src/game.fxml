@@ -2,9 +2,9 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<BorderPane fx:controller="GameController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
    <center>
       <GridPane gridLinesVisible="true" prefHeight="400.0" prefWidth="538.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -18,7 +18,50 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="b1" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" text="Button" visible="false" />
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="b2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" layoutX="210.0" layoutY="10.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="b5" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="b6" layoutX="110.0" layoutY="110.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="b7" layoutX="210.0" layoutY="110.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="b8" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="b9" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gameButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
          </children>
       </GridPane>
    </center>

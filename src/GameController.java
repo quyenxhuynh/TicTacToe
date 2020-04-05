@@ -15,6 +15,40 @@ public class GameController {
             b1.setText(turn);
             b1.setVisible(true);
         }
+        if (event.getSource() == b2) {
+            b2.setText(turn);
+            b2.setVisible(true);
+        }
+        if (event.getSource() == b3) {
+            b3.setText(turn);
+            b3.setVisible(true);
+        }
+        if (event.getSource() == b4) {
+            b4.setText(turn);
+            b4.setVisible(true);
+        }
+        if (event.getSource() == b5) {
+            b5.setText(turn);
+            b5.setVisible(true);
+        }
+        if (event.getSource() == b6) {
+            b6.setText(turn);
+            b6.setVisible(true);
+        }
+        if (event.getSource() == b7) {
+            b7.setText(turn);
+            b7.setVisible(true);
+        }
+        if (event.getSource() == b8) {
+            b8.setText(turn);
+            b8.setVisible(true);
+        }
+        if (event.getSource() == b9) {
+            b9.setText(turn);
+            b9.setVisible(true);
+        }
+
+
 
         nextTurn();
     }
