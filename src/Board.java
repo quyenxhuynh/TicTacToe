@@ -1,5 +1,3 @@
-package sample;
-
 public class Board {
     private static final int ROWS = 5;
     private static final int COLUMNS = 5;
