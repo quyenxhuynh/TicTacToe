@@ -12,8 +12,6 @@ A simple 3x3 Tic-Tac-Toe game implemented with JavaFX. Made by Quyen Huynh (qh8a
 
 ## Setup and Running
 
-Explain how to run the automated tests for this system
-
 ### Set your Environmental Variables
 Depending on where you downloaded the JavaFX libraries to, set the director in place of "path/to/javafx-sdk-14/lib"
 
