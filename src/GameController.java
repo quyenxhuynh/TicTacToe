@@ -1,12 +1,21 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 
 public class GameController {
     @FXML
     private Button b00, b01, b02, b10, b11, b12, b20, b21, b22;
+
+    @FXML
+    private Button restartButton;
 
     @FXML
     private Label winnerLabel;
@@ -42,6 +51,17 @@ public class GameController {
                 winnerLabel.setText(winner.toUpperCase() + " wins!");
                 disableAllButtons();
             }
+        }
+    }
+
+    @FXML
+    private void restartButtonHandler(ActionEvent event) throws IOException {
+        if (event.getSource() == restartButton) {
+            Stage stage = (Stage) restartButton.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("game.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
         }
     }
 

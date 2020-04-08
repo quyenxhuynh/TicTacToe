@@ -85,6 +85,13 @@
       <Pane prefHeight="360.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
    </right>
    <bottom>
-      <Pane prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="52.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="restartButton" mnemonicParsing="false" onAction="#restartButtonHandler" text="Restart" />
+               </children>
+            </StackPane>
+         </children></Pane>
    </bottom>
 </BorderPane>

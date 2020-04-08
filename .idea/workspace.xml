@@ -322,36 +322,36 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1586123911715" />
-    <state x="707" y="42" key="CommitChangelistDialog2" timestamp="1586313507172">
+    <state x="626" y="42" key="CommitChangelistDialog2" timestamp="1586313594519">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="707" y="42" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586313507172" />
+    <state x="626" y="42" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586313594519" />
     <state x="482" y="172" key="DetectedRootsChooserDialog" timestamp="1585980724108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="172" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1585980724108" />
-    <state width="1398" height="124" key="GridCell.Tab.0.bottom" timestamp="1586313575361">
+    <state width="1398" height="124" key="GridCell.Tab.0.bottom" timestamp="1586313738016">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="124" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586313575361" />
+    <state width="1398" height="124" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586313738016" />
     <state width="1398" height="124" key="GridCell.Tab.0.bottom/0.23.1440.838@0.23.1440.838" timestamp="1586139706504" />
     <state width="1398" height="124" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586125474014" />
-    <state width="1398" height="124" key="GridCell.Tab.0.center" timestamp="1586313575358">
+    <state width="1398" height="124" key="GridCell.Tab.0.center" timestamp="1586313738015">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="124" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586313575358" />
+    <state width="1398" height="124" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586313738015" />
     <state width="1398" height="124" key="GridCell.Tab.0.center/0.23.1440.838@0.23.1440.838" timestamp="1586139706503" />
     <state width="1398" height="124" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1586125474013" />
-    <state width="1398" height="124" key="GridCell.Tab.0.left" timestamp="1586313575354">
+    <state width="1398" height="124" key="GridCell.Tab.0.left" timestamp="1586313738014">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="124" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586313575354" />
+    <state width="1398" height="124" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586313738014" />
     <state width="1398" height="124" key="GridCell.Tab.0.left/0.23.1440.838@0.23.1440.838" timestamp="1586139706502" />
     <state width="1398" height="124" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1586125474012" />
-    <state width="1398" height="124" key="GridCell.Tab.0.right" timestamp="1586313575360">
+    <state width="1398" height="124" key="GridCell.Tab.0.right" timestamp="1586313738015">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="124" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586313575360" />
+    <state width="1398" height="124" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586313738015" />
     <state width="1398" height="124" key="GridCell.Tab.0.right/0.23.1440.838@0.23.1440.838" timestamp="1586139706504" />
     <state width="1398" height="124" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1586125474014" />
     <state x="208" y="31" key="SettingsEditor" timestamp="1585980737326">
@@ -364,10 +364,10 @@
     <state x="572" y="369" key="VCS.ChangelistChooser/0.23.1440.838@0.23.1440.838" timestamp="1586139811920" />
     <state x="572" y="372" key="VCS.ChangelistChooser/0.23.1440.846@0.23.1440.846" timestamp="1586026703980" />
     <state x="572" y="385" key="VCS.ChangelistChooser/0.23.1440.877@0.23.1440.877" timestamp="1586124746963" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586313509072">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586313599366">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586313509072" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586313599366" />
     <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585982604967">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
