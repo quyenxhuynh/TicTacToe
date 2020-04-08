@@ -11,8 +11,13 @@ public class Main extends Application {
         launch(args);
     }
 
+    /**
+     * Starts the program with the main screen
+     * @param primaryStage
+     * @throws Exception
+     */
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Tic-Tac-Toe");
 
         Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));

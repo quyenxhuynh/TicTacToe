@@ -12,6 +12,11 @@ public class Controller {
     @FXML
     private Button button;
 
+    /**
+     * Starts the game via scene change when button is clicked
+     * @param event
+     * @throws IOException
+     */
     @FXML
     private void startButtonClicked(ActionEvent event) throws IOException {
         if (event.getSource() == button) {
