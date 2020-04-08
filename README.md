@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-A simple 3x3 Tic-Tac-Toe game implemented with JavaFX. Made by Quyen Huynh (qh8ar) for JavaFX practice in UVA S2020's CS 2501 (Software Developmental Essentials). 
+A simple 3x3 Tic-Tac-Toe game implemented with JavaFX. Made by Quyen Huynh (qh8ar) for JavaFX practice in UVA S2020's CS 2501 (Software Developmental Essentials) with McBurney. 
 
 ## Getting Started
 
