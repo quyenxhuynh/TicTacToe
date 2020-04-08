@@ -1,62 +1,104 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 
 public class GameController {
     @FXML
-    private Button b1, b2, b3, b4, b5, b6, b7, b8, b9;
+    private Button b00, b01, b02, b10, b11, b12, b20, b21, b22;
 
+    @FXML
+    private Label winnerLabel;
+
+    private final int ROWS = 3;
+    private final int COLUMNS = 3;
+    private String[][] board = new String[][] {
+            {" ", " ", " "},
+            {" ", " ", " "},
+            {" ", " ", " "}
+    };
     private String turn = "x";
+    private int playsMade = 0;
 
     @FXML
     private void gameButtonHandler(ActionEvent event) {
-        if (event.getSource() == b1) {
-            b1.setText(turn);
-            b1.setVisible(true);
-            b1.setDisable(true);
+        Button b = (Button) (event.getSource());
+        b.setText(turn);
+        b.setVisible(true);
+        b.setDisable(true);
+
+        int x = Integer.parseInt(b.getId().substring(1, 2));
+        int y = Integer.parseInt(b.getId().substring(2, 3));
+        board[x][y] = turn;
+
+        if (++playsMade == 9) {
+            winnerLabel.setText("It's a tie!");
         }
-        if (event.getSource() == b2) {
-            b2.setText(turn);
-            b2.setVisible(true);
-            b2.setDisable(true);
+        else {
+            nextTurn();
+            String winner = getWinner(x, y);
+            if (!winner.equals(" ")) {
+                winnerLabel.setText(winner.toUpperCase() + " wins!");
+                disableAllButtons();
+            }
         }
-        if (event.getSource() == b3) {
-            b3.setText(turn);
-            b3.setVisible(true);
-            b3.setDisable(true);
+    }
+
+    private void disableAllButtons() {
+        b00.setDisable(true);
+        b01.setDisable(true);
+        b02.setDisable(true);
+        b10.setDisable(true);
+        b11.setDisable(true);
+        b12.setDisable(true);
+        b20.setDisable(true);
+        b21.setDisable(true);
+        b22.setDisable(true);
+    }
+
+    private String getWinner(int x, int y) {
+        if (!checkRow(x).equals(" ")) {
+            return checkRow(x);
+        } else if (!checkColumn(y).equals(" ")) {
+            return checkColumn(y);
+        } else if (!checkDiagonals().equals(" ")){
+            return checkDiagonals();
+        } else {
+            return " ";
         }
-        if (event.getSource() == b4) {
-            b4.setText(turn);
-            b4.setVisible(true);
-            b4.setDisable(true);
+    }
+
+    private String checkRow(int x) {
+        String prev = board[x][0];
+        for (int i = 1; i < ROWS; i++) {
+            if (!prev.equals(board[x][i])) {
+                return " ";
+            }
         }
-        if (event.getSource() == b5) {
-            b5.setText(turn);
-            b5.setVisible(true);
-            b5.setDisable(true);
+        return prev;
+    }
+
+    private String checkColumn(int y) {
+        String prev = board[0][y];
+        for (int i = 1; i < COLUMNS; i++) {
+            if (!prev.equals(board[i][y])) {
+                return " ";
+            }
         }
-        if (event.getSource() == b6) {
-            b6.setText(turn);
-            b6.setVisible(true);
-            b6.setDisable(true);
+        return prev;
+    }
+
+    private String checkDiagonals() {
+        String prev = board[0][0];
+        if (board[1][1].equals(prev) && board[2][2].equals(prev)) {
+            return prev;
         }
-        if (event.getSource() == b7) {
-            b7.setText(turn);
-            b7.setVisible(true);
-            b7.setDisable(true);
+        prev = board[0][2];
+        if (board[1][1].equals(prev) && board[2][0].equals(prev)) {
+            return prev;
         }
-        if (event.getSource() == b8) {
-            b8.setText(turn);
-            b8.setVisible(true);
-            b8.setDisable(true);
-        }
-        if (event.getSource() == b9) {
-            b9.setText(turn);
-            b9.setVisible(true);
-            b9.setDisable(true);
-        }
-        nextTurn();
+        return " ";
     }
 
     private void nextTurn() {
@@ -65,5 +107,6 @@ public class GameController {
         } else {
             turn = "x";
         }
+        winnerLabel.setText("Current turn: " + turn.toUpperCase());
     }
 }
