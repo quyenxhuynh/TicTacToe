@@ -1,3 +1,9 @@
+/**
+ * @author quyen huynh
+ * executable: main.java (no program arguments)
+ * libraries needed: javafx, fxml
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
