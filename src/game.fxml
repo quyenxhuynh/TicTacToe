@@ -70,7 +70,7 @@
          <children>
             <StackPane prefHeight="51.0" prefWidth="600.0">
                <children>
-                  <Label fx:id="winnerLabel" prefHeight="17.0" prefWidth="106.0" text="Current Turn: X">
+                  <Label fx:id="winnerLabel" alignment="CENTER" prefHeight="17.0" prefWidth="106.0" text="Current Turn: X" textAlignment="CENTER">
                      <font>
                         <Font name="American Typewriter" size="13.0" />
                      </font>
